@@ -10,7 +10,7 @@ License
 Moefm-widget v0.1
 http://aka-rin.com/
 
-Copyright 2011, Octopus(akatako@aka-tako.com, Google+: +Tomomi Sawko)
+Copyright 2013, Octopus(akatako@aka-tako.com, Google+: +Tomomi Sawko)
 Licensed under the WTFPL Version 2 licenses.
 http://aka-rin.com/license
 
@@ -19,7 +19,7 @@ http://aka-rin.com/license
 jQuery JavaScript Library
 http://jquery.com/
 
-Copyright 2011, John Resig
+Copyright 2013, John Resig
 Dual licensed under the MIT or GPL Version 2 licenses.
 http://jquery.org/license
 
