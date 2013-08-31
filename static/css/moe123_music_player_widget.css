@@ -1,0 +1,115 @@
+#moe123_music_player { display: hidden;  }
+#moe123_music_player_widget { 
+	background: white;
+	text-align: left;
+	text-shadow: white 0px 0px 0px;
+	height: 70px;
+	width: 260px;
+	overflow: hidden;
+	_zoom: 1;
+	position: relative; 
+	border-radius: 4px;
+	border: 1px solid #EEE;
+	font: 12px/1.125 Arial,Helvetica,sans-serif;
+	color: #333;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#moe123_music_player_widget h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, select, input, textarea, th, td { margin: 0; padding: 0; } 
+
+#moe123_music_player_widget a { text-shadow: white 0px 0px 0px; outline: 0; text-decoration: none; } 
+#moe123_music_player_widget a:hover{ color: #6295FF; } 
+#moe123_music_player_widget a:active{ color: #CCC; }
+
+#moe123_music_player_back { 
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+	-moz-opacity: 0.25;
+	*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+	_filter: alpha(opacity=25);
+	opacity: .25;
+	width: 262px; 
+	border-radius: 3px;
+	position: absolute;
+	top: 0px; left: 0px;
+	overflow: hidden;
+}
+#moe123_music_player_back img { 
+	width: 100%;
+	position: absolute; 
+}
+#moe123_music_player_wrapper { 
+	overflow: hidden;
+	position: relative;
+	top: 0px; left: 0px;
+	width: 250px;
+	padding: 5px;
+	border-radius: 4px;
+}
+#moe123_music_player_title { 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	width: 195px;
+	color: #3A76F2;
+	line-height: 20px;
+	padding-left: 20px;
+	background: url(../img/media_moefou_favicon.png) center left no-repeat; 
+}
+#moe123_music_player_title:hover { text-decoration: none; }
+#moe123_music_player_message { 
+	display: inline-block;
+	width: 255px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	color: #777;
+	text-shadow: 1px 1px 2px white;
+}
+#moe123_music_player_random_list { display: inline-block; position: absolute; right: 5px; top: 51px; color: #3A76F2;	 }
+#moe123_music_player_random_list:hover { text-decoration: underline; }
+#moe123_music_player_seq_group { display: inline-block; } #moe123_music_player_seq_group a { display: none; }
+#moe123_music_player_list { width: 100%; }
+#moe123_music_player_list a { 
+	color: #144BBB;
+	line-height: 20px;
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+}
+#moe123_music_player_list a:hover { text-decoration: underline; }
+#moe123_music_player_list .on { color: #3A76F2; font-weight: bold; }
+#moe123_music_player_progress_wrapper { overflow: hidden; line-height: 13px; height: 13px; display: inline-block; margin: 3px auto; }
+#moe123_music_player_status { float: right; width: 78px; text-align: right; float: left; display: inline-block; vertical-align: middle; }
+#moe123_music_player_progress { 
+	opacity: .6;
+	_filter: alpha(opacity=60);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	margin-top: 1px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	width: 165px;
+	padding: 3px;
+	height: 5px;
+	background-color: #EEE;
+	border-radius: 10px; 
+}
+#moe123_music_player_progress div {
+	height: 100%;
+	line-height: 22px;
+	width: 0;
+	font-family: arial; 
+	font-size: 3px;
+	overflow: hidden;
+	background-color: #144BBB;
+	border-radius: 10px;
+}
+#moe123_music_player_next { position: absolute; top: 4px; right: 5px; vertical-align: middle; display: inline-block; width: 16px; height: 22px; background: url(../img/media_seek_forward.png) center no-repeat;}
+#moe123_music_player_play { position: absolute; top: 4px; right: 25px; vertical-align: middle; display: inline-block; width: 16px; height: 22px; background: url(../img/media_playback_start.png) center no-repeat;}
+#moe123_music_player_pause { position: absolute; top: 4px; right: 25px; vertical-align: middle; display: inline-block; width: 16px; height: 22px; background: url(../img/media_playback_pause.png) center no-repeat;}

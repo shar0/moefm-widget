@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>萌否电台挂件</title>
+	<link rel="Stylesheet" type="text/css" href="static/css/moe123_music_player_widget.css"></link>
+</head>
+<body>
+	
+	<p style="text-align: center;">萌否博客挂件~以WTFPL协议分发</p></br>
+	
+	<div id="moe123_music_player_widget" style="margin: 0 auto;">
+		<div id="moe123_music_player_back"><img src="static/img/spaceball.gif"></img></div>
+		<div id="moe123_music_player"></div>
+		<div id="moe123_music_player_wrapper">
+			<a href="http://moe.fm/" id="moe123_music_player_title" target="_blank">萌否电台</a>
+			<a href="javascript:void(0)" id="moe123_music_player_play"></a>
+			<a href="javascript:void(0)" id="moe123_music_player_pause"></a>
+			<a href="javascript:void(0)" id="moe123_music_player_next"></a>
+			<div id="moe123_music_player_progress_wrapper">
+				<div id="moe123_music_player_progress" class="tiny-green"><div></div></div>
+				<div id="moe123_music_player_status"><span id="moe123_music_player_current_time"></span> / <span id="moe123_music_player_duration"></span></div>
+			</div>
+			<div id="moe123_music_player_message">>O<...播放器初始化中！</div>
+			<a id="moe123_music_player_random_list" href="javascript:void(0)" onClick="Player.force_update();">换一批</a>
+			<div id="moe123_music_player_list"></div>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="static/js/jplayer/jquery.jplayer.min.js"></script>
+	<script src="static/js/moe123_music_player_widget_min.js"></script>
+	<script>
+	$(document).ready(function(){
+		Player.init_player('', 'get_music_list.php', 'get_music_list.php');
+	});
+	</script>
+	
+<!--
+	EXAMPLE:
+	
+	<link rel="Stylesheet" type="text/css" href="static/css/moe123_music_player_widget.css"></link>
+	<div id="moe123_music_player_widget">
+		<div id="moe123_music_player_back"><img src="static/img/spaceball.gif"></img></div>
+		<div id="moe123_music_player"></div>
+		<div id="moe123_music_player_wrapper">
+			<a href="http://moe.fm/" id="moe123_music_player_title" target="_blank">萌否电台</a>
+			<a href="javascript:void(0)" id="moe123_music_player_play"></a>
+			<a href="javascript:void(0)" id="moe123_music_player_pause"></a>
+			<a href="javascript:void(0)" id="moe123_music_player_next"></a>
+			<div id="moe123_music_player_progress_wrapper">
+				<div id="moe123_music_player_progress" class="tiny-green"><div></div></div>
+				<div id="moe123_music_player_status"><span id="moe123_music_player_current_time"></span> / <span id="moe123_music_player_duration"></span></div>
+			</div>
+			<div id="moe123_music_player_message">>O<...播放器初始化中！</div>
+			<a id="moe123_music_player_random_list" href="javascript:void(0)" onClick="Player.force_update();">换一批</a>
+			<div id="moe123_music_player_list"></div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="static/js/jplayer/jquery.jplayer.min.js"></script>
+	<script src="static/js/moe123_music_player_widget_min.js"></script>
+	<script>$(document).ready(function(){Player.init_player('', 'get_music_list.php', 'get_music_list.php');});</script>
+-->
+</body>
+</html>
